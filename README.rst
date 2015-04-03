@@ -1,5 +1,5 @@
 XStatic-AdminLTE
----------------
+----------------
 
 AdminLTE toolkit library packaged for setuptools (easy_install) / pip.
 
@@ -11,3 +11,13 @@ the XStatic base package, if you like.
 
 You can find more info about the xstatic packaging way in the package `XStatic`.
 
+Usage
+-----
+
+.. code-block:: python
+
+    import xstatic.pkg.adminlte
+
+    STATICFILES_DIRS = [('lib',
+            xstatic.main.XStatic(xstatic.pkg.adminlte).base_dir),
+    ]
